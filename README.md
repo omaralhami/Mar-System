@@ -9,8 +9,8 @@
   <h3>A modern, feature-rich Discord bot with a clean, all-in-one design</h3>
   
   <p>
-    <a href="https://discord.gg/mar"><img src="https://img.shields.io/badge/Join_our_community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
-    <a href="https://marservices.ss"><img src="https://img.shields.io/badge/Visit_our_website-0088CC?style=for-the-badge&logo=web&logoColor=white" alt="Website"></a>
+    <a href="https://discord.gg/marx"><img src="https://img.shields.io/badge/Join_our_community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
+    <a href="https://marservices.cc"><img src="https://img.shields.io/badge/Visit_our_website-0088CC?style=for-the-badge&logo=web&logoColor=white" alt="Website"></a>
   </p>
   
 </div>
@@ -20,7 +20,7 @@
 Mar System is a powerful Discord bot built with modern features including welcome messages, slash commands, embeds, interactive buttons, giveaways, and voice channel management - all contained in a single file for easy deployment and maintenance.
 
 <div align="center">
-  <img src="https://i.imgur.com/jQlQryX.png" alt="Mar System Bot" width="600">
+  <img src="E:\Documents\discord-bots\mar-system-v2\landing\logo.png" alt="Mar System Bot" width="600">
 </div>
 
 ## ✦ Features
@@ -111,13 +111,13 @@ For detailed deployment instructions on free hosting platforms like Replit, Rail
 
 Join our growing community to get help, share your creations, suggest features, and connect with other bot enthusiasts:
 
-- **Discord Server**: [discord.gg/mar](https://discord.gg/mar)
-- **Website**: [marservices.ss](https://marservices.ss)
+- **Discord Server**: [discord.gg/mar](https://discord.gg/marx)
+- **Website**: [marservices.ss](https://marservices.cc)
 
 ## ✦ License
 
 This project is available under the MIT License.
 
 <div align="center">
-  <p>Created with ♥ by <a href="https://github.com/omaralhami">Omar Alhami - Mar</a></p>
+  <p>Created with ♥ by <a href="https://github.com/omaralhami">Mar (Omar Alhami)</a></p>
 </div> 

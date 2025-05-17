@@ -79,6 +79,8 @@ DEPLOYMENT.md
 setup-github.bat
 setup-github.sh
 reset-github.bat
+reset-and-push.bat
+commit-and-push.bat
 
 # Custom services
 CUSTOM_SERVICES.md
