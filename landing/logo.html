@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar System Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0A0A0A;
+            margin: 0;
+            padding: 20px;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .logo-container {
+            width: 240px;
+            height: 240px;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            text-align: center;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #4752C4;
+        }
+        canvas {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- SVG Logo -->
+    <div class="logo-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+            <!-- Background circle -->
+            <circle cx="120" cy="120" r="110" fill="#202225"/>
+            
+            <!-- Discord-like logo with M letter -->
+            <g transform="translate(40, 60)">
+                <!-- Stylized M shape for Mar System -->
+                <path d="M20,0 L50,0 L80,50 L110,0 L140,0 L140,120 L110,120 L110,50 L80,100 L50,50 L50,120 L20,120 L20,0 Z" fill="#5865F2"/>
+                
+                <!-- Stylized gear/cog for system management -->
+                <circle cx="80" cy="75" r="20" fill="#FFFFFF" opacity="0.2"/>
+                <path d="M80,55 L85,55 L90,65 L100,60 L105,65 L100,75 L110,80 L105,85 L95,80 L90,90 L85,90 L80,80 L70,85 L65,80 L70,70 L60,65 L65,60 L75,65 L80,55 Z" fill="#FFFFFF"/>
+            </g>
+            
+            <!-- Decorative elements -->
+            <circle cx="40" cy="40" r="8" fill="#5865F2" opacity="0.8"/>
+            <circle cx="200" cy="40" r="8" fill="#5865F2" opacity="0.8"/>
+            <circle cx="40" cy="200" r="8" fill="#5865F2" opacity="0.8"/>
+            <circle cx="200" cy="200" r="8" fill="#5865F2" opacity="0.8"/>
+        </svg>
+    </div>
+    
+    <h2>Mar System Logo</h2>
+    
+    <button id="download-btn">Download as PNG</button>
+    
+    <div class="instructions">
+        <p>This is your Mar System bot logo. Click the button above to download it as a PNG file.</p>
+    </div>
+    
+    <!-- Canvas for PNG conversion -->
+    <canvas id="canvas" width="240" height="240"></canvas>
+    
+    <script>
+        document.getElementById('download-btn').addEventListener('click', function() {
+            const svg = document.querySelector('svg');
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Create a data URL from the SVG
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(svgBlob);
+            
+            // Create an image to draw on the canvas
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0);
+                URL.revokeObjectURL(url);
+                
+                // Convert canvas to PNG and download
+                const pngUrl = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                downloadLink.href = pngUrl;
+                downloadLink.download = 'mar-system-logo.png';
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            };
+            img.src = url;
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Background (transparent) -->
+  <rect width="240" height="240" fill="none"/>
+  
+  <!-- Rocket Body -->
+  <path d="M120,20 C80,20 60,80 60,160 L100,160 L140,160 L180,160 C180,80 160,20 120,20 Z" fill="#5865F2"/>
+  
+  <!-- Rocket Window -->
+  <circle cx="120" cy="80" r="20" fill="#FFFFFF" opacity="0.3"/>
+  <circle cx="120" cy="80" r="15" fill="#FFFFFF" opacity="0.5"/>
+  
+  <!-- Rocket Bottom -->
+  <path d="M100,160 L100,190 L120,170 L140,190 L140,160 Z" fill="#5865F2"/>
+  
+  <!-- Rocket Fins -->
+  <path d="M60,160 L40,200 L80,170 Z" fill="#FF5252"/>
+  <path d="M180,160 L200,200 L160,170 Z" fill="#FF5252"/>
+  
+  <!-- Rocket Flames -->
+  <path d="M110,190 L95,220 L120,200 L145,220 L130,190 Z" fill="#FF9D00"/>
+  <path d="M115,190 L105,210 L120,195 L135,210 L125,190 Z" fill="#FFEA00"/>
+</svg> 
