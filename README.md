@@ -20,7 +20,7 @@
 Mar System is a powerful Discord bot built with modern features including welcome messages, slash commands, embeds, interactive buttons, giveaways, and voice channel management - all contained in a single file for easy deployment and maintenance.
 
 <div align="center">
-  <img src="https://github.com/omaralhami/mar-system/blob/main/landing/logo.png" alt="Mar System Bot" width="600">
+  <img src="https://raw.githubusercontent.com/omaralhami/mar-system/main/landing/logo.png" alt="Mar System Bot" width="600">
 </div>
 
 ## ✦ Features
@@ -114,6 +114,21 @@ Join our growing community to get help, share your creations, suggest features, 
 - **Discord Server**: [discord.gg/marx](https://discord.gg/marx)
 - **The Bot Website**: [marsystem.vercel.app](https://marsystem.vercel.app)
 - **Mar Services Website**: [marservices.cc](https://marservices.cc)
+
+## ✦ Landing Page
+
+The `/landing` directory contains a modern, responsive landing page for the Mar System bot. This page is automatically deployed to Vercel when you push to this repository.
+
+### Deployment Status
+
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-success?style=for-the-badge&logo=vercel&logoColor=white)](https://marsystem.vercel.app)
+
+### Customizing the Landing Page
+
+To modify the landing page:
+1. Edit files in the `/landing` directory
+2. Commit and push your changes
+3. Vercel will automatically redeploy the updated page
 
 ## ✦ License
 
