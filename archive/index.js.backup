@@ -6,6 +6,7 @@
  * بوت ديسكورد شامل مع وظائف الترحيب، أوامر سلاش، إمبدز، أزرار، ومعالجة الصور
  */
 require('dotenv').config();
+const keepAlive = require('./keep_alive');
 const { 
     Client, 
     Collection, 
@@ -1028,6 +1029,15 @@ client.on(Events.InteractionCreate, async interaction => {
     try {
         const { commandName, options } = interaction;
         console.log(`Received command: ${commandName}`);
+        
+        // Check if the user has Administrator permissions
+        if (!interaction.member.permissions.has(PermissionFlagsBits.Administrator)) {
+            await interaction.reply({
+                content: 'You need Administrator permissions to use this bot.',
+                ephemeral: true
+            });
+            return;
+        }
         
         // Ping command
         if (commandName === 'ping') {
@@ -3902,4 +3912,5 @@ function updateBotAudioState(guildId, options = {}) {
 
 // Login the bot with colorful console message
 console.log('\x1b[35m✦ \x1b[0mConnecting to Discord...\x1b[0m');
+keepAlive();
 client.login(TOKEN);

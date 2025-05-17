@@ -111,6 +111,15 @@ const commands = [
                 .setRequired(true)
                 .addChannelTypes(ChannelType.GuildText)),
     
+    // New rules command
+    new SlashCommandBuilder()
+        .setName('rules')
+        .setDescription('Display the server rules')
+        .addBooleanOption(option =>
+            option.setName('public')
+                .setDescription('Whether to show the rules publicly (default: false)')
+                .setRequired(false)),
+    
     // New visual embed builder command
     new SlashCommandBuilder()
         .setName('create')
@@ -1130,6 +1139,31 @@ client.on(Events.InteractionCreate, async interaction => {
             await interaction.reply({
                 embeds: [confirmEmbed],
                 ephemeral: true
+            });
+        }
+        
+        // Rules command
+        else if (commandName === 'rules') {
+            // Get the public option (default: false)
+            const isPublic = options.getBoolean('public') ?? false;
+            
+            // Create rules embed (same as the one used in the button handler)
+            const rulesEmbed = new EmbedBuilder()
+                .setColor('#FFFFFF')
+                .setTitle('Server Rules')
+                .setDescription('Please follow these guidelines to ensure a positive experience for everyone:')
+                .addFields(
+                    { name: '✦ Respect Others', value: 'Treat everyone with kindness and respect.' },
+                    { name: '✦ No Spam', value: 'Avoid spamming messages, mentions, or excessive emotes.' },
+                    { name: '✦ Appropriate Content', value: 'Keep all content suitable for all audiences.' },
+                    { name: '✦ Follow Discord ToS', value: 'Adhere to Discord\'s Terms of Service at all times.' }
+                )
+                .setFooter({ text: 'Mar System Rules', iconURL: client.user.displayAvatarURL() });
+            
+            // Reply with the rules embed, making it ephemeral based on the public option
+            await interaction.reply({ 
+                embeds: [rulesEmbed], 
+                ephemeral: !isPublic 
             });
         }
         

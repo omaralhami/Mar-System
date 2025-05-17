@@ -33,6 +33,7 @@ Mar System is a powerful Discord bot built with modern features including welcom
 | **Button System** | Interactive buttons with customizable actions and responses |
 | **Giveaway System** | Create and manage giveaways with customizable options |
 | **Voice Commands** | Join, leave, and manage voice channels directly through commands |
+| **Server Rules** | Display server rules with customizable visibility options |
 
 ## ✦ Commands
 
@@ -40,6 +41,7 @@ Mar System is a powerful Discord bot built with modern features including welcom
 - `/ping` - Check bot latency
 - `/welcome` - Send a welcome message to the channel
 - `/setwelcome` - Set the welcome channel for new member announcements
+- `/rules` - Display server rules (with option to show publicly or privately)
 
 ### Content Creation
 - `/create embed` - Open a visual editor for creating rich embeds
