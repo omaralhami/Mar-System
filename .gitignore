@@ -73,7 +73,7 @@ out/
 .github/
 
 # Deployment files
-DEPLOYMENT.md
+
 
 # Setup files
 setup-github.bat
