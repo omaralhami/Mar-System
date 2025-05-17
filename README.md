@@ -20,7 +20,7 @@
 Mar System is a powerful Discord bot built with modern features including welcome messages, slash commands, embeds, interactive buttons, giveaways, and voice channel management - all contained in a single file for easy deployment and maintenance.
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/omaralhami/mar-system/main/landing/logo.png" alt="Mar System Bot" width="600">
+  <img src="https://github.com/omaralhami/mar-system/blob/main/landing/logo.png" alt="Mar System Bot" width="600">
 </div>
 
 ## ✦ Features
