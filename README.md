@@ -10,7 +10,7 @@
   
   <p>
     <a href="https://discord.gg/marx"><img src="https://img.shields.io/badge/Join_our_community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Server"></a>
-    <a href="https://marservices.cc"><img src="https://img.shields.io/badge/Visit_our_website-0088CC?style=for-the-badge&logo=web&logoColor=white" alt="Website"></a>
+    <a href="https://marsystem.vercel.app"><img src="https://img.shields.io/badge/Visit_our_website-0088CC?style=for-the-badge&logo=web&logoColor=white" alt="Website"></a>
   </p>
   
 </div>
@@ -112,7 +112,8 @@ For detailed deployment instructions on free hosting platforms like Replit, Rail
 Join our growing community to get help, share your creations, suggest features, and connect with other bot enthusiasts:
 
 - **Discord Server**: [discord.gg/marx](https://discord.gg/marx)
-- **Website**: [marservices.cc](https://marservices.cc)
+- **The Bot Website**: [marsystem.vercel.app](https://marsystem.vercel.app)
+- **Mar Services Website**: [marservices.cc](https://marservices.cc)
 
 ## ✦ License
 
